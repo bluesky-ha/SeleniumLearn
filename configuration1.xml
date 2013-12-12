@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding = "GBK"?>
+<configuration>
+	<logininfo>
+		<url>http://newcs.adchina.com</url>
+		<Username>test_cs</Username>
+		<password>testpassword</password>
+	</logininfo>
+	<searchCampaign>
+		<keywords>53313</keywords>
+	</searchCampaign>
+</configuration>
