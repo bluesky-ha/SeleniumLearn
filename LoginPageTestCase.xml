@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "GBK"?>
+<SUITE name="登录界面测试用例">
+	<SETTINGS  url='http://newcs.adchina.com'></SETTINGS>
+	<TEST name="测试可以登录成功">
+		<STEPS>
+			<STEP index="1" type="Type.INPUT" name="输入用户名">
+				<XPATH>//input[@id="user_name"]</XPATH>
+				<VALUE>testcs</VALUE>
+			</STEP>
+			<STEP index="2" type="Type.INPUT" name="输入密码">
+				<XPATH>//input[@id="password"]</XPATH>
+				<VALUE>testpassword</VALUE>
+			</STEP>
+			<STEP index='3' type='Type.CLICK' name="登录">
+				<XPATH>//input[@type="submit"]</XPATH>
+			</STEP>
+		</STEPS>
+	</TEST>
+</SUITE>
