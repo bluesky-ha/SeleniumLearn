@@ -3,6 +3,12 @@ package com.login;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+/**
+ * Æô¶¯firefox driver
+ * @author Cherry.Zhu
+ *
+ */
+
 public class MyWebDriver {
 
 	private static WebDriver mWd;

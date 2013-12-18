@@ -13,29 +13,35 @@ public class MyLoginPageTest {
 	public void setUp(){
 		wd = MyWebDriver.getInstance();
 		String path =  "";
+		//解析出测试URL
 		path = XmlParseDom4.parseXML().element("SETTINGS").attributeValue("url");
+		//在浏览器输入URL地址
 		wd.get(path);
 	}
 	@Test
 	public void testLogin(){
-//		String username = "";
-//		String pwd = "";
-//		username = XmlParseDom4.parseXML().valueOf("//SETP[@index='1']/VALUE");
-		String username  = XmlParseDom4.parseXML().selectSingleNode("//SETP[@index='1']/VALUE").toString();
+		//获取XML文件中用户名和密码
+		String username  = XmlParseDom4.parseNode("//STEP[@index='1']/VALUE").getText();
+		String pwd = XmlParseDom4.parseNode("//STEP[@index='2']/VALUE").getText();
 		
-//		String username_xpath = XmlParseDom4.parseXML().valueOf("//STEP[@index='1']/XPATH");
-//		String username_xpath = XmlParseDom4.parseXML().selectSingleNode("//STEP[@index='1']/XPATH").toString();
+		//获取出定义在XML文件中的用户名输入框，密码输入框及登陆按钮的xpath表达式
+		String username_xpath = XmlParseDom4.parseNode("//STEP[@index='1']/XPATH").getText();
+		String pwd_xpath = XmlParseDom4.parseNode("//STEP[@index='2']/XPATH").getText();
+		String btn_xpath = XmlParseDom4.parseNode("//STEP[@index='3']/XPATH").getText();
 		
-//		WebElement input_username = wd.findElement(By.xpath(username_xpath));
-		WebElement input_username = wd.findElement(By.id("user_name"));
+		//在浏览器中找到用户名输入框并输入用户名
+		WebElement input_username = wd.findElement(By.xpath(username_xpath));
 		input_username.sendKeys(username);
-//		pwd = XmlParseDom4.parseXML().valueOf("//STEP[@index='2']/VALUE");
-//		String pwd_xpath = XmlParseDom4.parseXML().valueOf("//STEP[index='2']/XPATH");
-//		String button = XmlParseDom4.parseXML().valueOf("//STEP[@index='3'/XPATH");
-//		WebElement input_pwd = wd.findElement(By.xpath(pwd_xpath));
-//		WebElement login_button = wd.findElement(By.xpath(button));
-//		input_pwd.sendKeys(pwd);
-//		login_button.click();
+		
+		//在浏览器中找到密码输入框并输入密码
+		WebElement input_pwd = wd.findElement(By.xpath(pwd_xpath));
+		input_pwd.sendKeys(pwd);
+		
+		//在浏览器中找到登陆按钮并点击
+		WebElement login_button = wd.findElement(By.xpath(btn_xpath));
+		login_button.click();
+		
+		
 		
 	}
 

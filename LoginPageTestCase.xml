@@ -5,13 +5,13 @@
 		<STEPS>
 			<STEP index="1" type="Type.INPUT" name="?????????">
 				<XPATH>//input[@id="user_name"]</XPATH>
-				<VALUE>testcs</VALUE>
+				<VALUE>test_cs</VALUE>
 			</STEP>
 			<STEP index="2" type="Type.INPUT" name="????????">
 				<XPATH>//input[@id="password"]</XPATH>
 				<VALUE>testpassword</VALUE>
 			</STEP>
-			<STEP index='3' type='Type.CLICK' name="???">
+			<STEP index="3" type='Type.CLICK' name="???">
 				<XPATH>//input[@type="submit"]</XPATH>
 			</STEP>
 		</STEPS>
