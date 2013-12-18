@@ -1,17 +1,17 @@
 <?xml version = "1.0" encoding = "GBK"?>
-<SUITE name="??????????????">
+<SUITE name="µÇÂ½½çÃæ²âÊÔ">
 	<SETTINGS  url="http://newcs.adchina.com"></SETTINGS>
-	<TEST name="????????????">
+	<TEST name="²âÊÔµÇÂ½">
 		<STEPS>
-			<STEP index="1" type="Type.INPUT" name="?????????">
+			<STEP index="1" type="Type.INPUT" name="ÊäÈëÓÃ»§Ãû">
 				<XPATH>//input[@id="user_name"]</XPATH>
 				<VALUE>test_cs</VALUE>
 			</STEP>
-			<STEP index="2" type="Type.INPUT" name="????????">
+			<STEP index="2" type="Type.INPUT" name="ÊäÈëÃÜÂë">
 				<XPATH>//input[@id="password"]</XPATH>
 				<VALUE>testpassword</VALUE>
 			</STEP>
-			<STEP index="3" type='Type.CLICK' name="???">
+			<STEP index="3" type='Type.CLICK' name="µã»÷µÇÂ½">
 				<XPATH>//input[@type="submit"]</XPATH>
 			</STEP>
 		</STEPS>

@@ -9,7 +9,7 @@ import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
 
 /**
- * 解析xml文件
+ * 解析XML
  * @author Cherry.Zhu
  *
  */
