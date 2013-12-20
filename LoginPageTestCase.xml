@@ -4,15 +4,15 @@
 	<TEST name="²âÊÔµÇÂ½">
 		<STEPS>
 			<STEP index="1" type="Type.INPUT" name="ÊäÈëÓÃ»§Ãû">
-				<XPATH>//input[@id="user_name"]</XPATH>
+				<XPATH>//input[@id='user_name']</XPATH>
 				<VALUE>test_cs</VALUE>
 			</STEP>
 			<STEP index="2" type="Type.INPUT" name="ÊäÈëÃÜÂë">
-				<XPATH>//input[@id="password"]</XPATH>
+				<XPATH>//input[@id='password']</XPATH>
 				<VALUE>testpassword</VALUE>
 			</STEP>
 			<STEP index="3" type='Type.CLICK' name="µã»÷µÇÂ½">
-				<XPATH>//input[@type="submit"]</XPATH>
+				<XPATH>//input[@type='submit']</XPATH>
 			</STEP>
 		</STEPS>
 	</TEST>
